@@ -2,9 +2,7 @@ public class Main {
     public static void main(String[] args) {
 
 
-        System.out.println("Hello world!");
-
-        Filme filme = new Filme("Davin",2004);
+        Filme filme = new Filme("Harry Potter e o Prisioneiro de Azkaban",2004);
 
 
 

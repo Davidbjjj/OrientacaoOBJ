@@ -4,16 +4,7 @@ public class Filme {
 
     private  int anoLancamento;
 
-
-    Filme(String Nome, int AnoLancamento){
-
-        this.nome= Nome;
-        this.anoLancamento=AnoLancamento;
-
-    }
-
-
-  private String getnome(){
+    private String getnome(){
 
         return nome;
 
@@ -26,10 +17,17 @@ public class Filme {
 
     }
 
+    Filme(String Nome, int AnoLancamento){
 
-    void DescricaoFilme(){
+        this.nome= Nome;
+        this.anoLancamento=AnoLancamento;
 
-        System.out.println("O filme "+nome+" foi lançado no ano de "+anoLancamento);
+    }
+
+
+    public void DescricaoFilme(){
+
+        System.out.println("O filme "+nome+", foi lançado no ano de "+anoLancamento);
 
     }
 

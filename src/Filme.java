@@ -4,30 +4,34 @@ public class Filme {
 
     private  int anoLancamento;
 
-    private String getnome(){
+
+    public String getNome(){
 
         return nome;
 
     }
 
-
-    public  String setnome(){
-
-       return nome;
+    public void setNome(String nome){
+        this.nome = nome;
 
     }
 
-    Filme(String Nome, int AnoLancamento){
 
-        this.nome= Nome;
-        this.anoLancamento=AnoLancamento;
+    public int getAnoLancamento(){
 
+        return anoLancamento;
+    }
+
+    public void setAnoLancamento(int anoLancamento){
+
+        this.anoLancamento = anoLancamento;
+    
     }
 
 
     public void DescricaoFilme(){
 
-        System.out.println("O filme "+nome+", foi lançado no ano de "+anoLancamento);
+        System.out.println("O filme "+getNome()+", foi lançado no ano de "+getAnoLancamento());
 
     }
 

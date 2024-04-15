@@ -2,8 +2,9 @@ public class Main {
     public static void main(String[] args) {
 
 
-        Filme filme = new Filme("Harry Potter e o Prisioneiro de Azkaban",2004);
-
+       Filme filme= new Filme();
+       filme.setNome("Harry Potter e o Prisioneiro de Azkaban");
+       filme.setAnoLancamento(2004);
 
 
        filme.DescricaoFilme();

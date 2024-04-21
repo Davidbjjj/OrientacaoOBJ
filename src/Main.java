@@ -13,7 +13,11 @@ public class Main {
 
         serie.setNome("Dois Homens e Meio");
         serie.setAnoLancamento(2006);
+        serie.setEpsodios(15);
+        serie.setMinutos(30);
         serie.Descricao();
+        System.out.println("Com duração de "+serie.calculoep(0));
+
 
 
     }

@@ -1,10 +1,11 @@
 public class Main {
     public static void main(String[] args) {
 
-        Serie serie=new Serie();
+        Serie serie = new Serie();
         serie.setTipo("A Serie ");
         Filme filme= new Filme();
         filme.setTipo("O Filme ");
+
 
         filme.setNome("Harry Potter e o Prisioneiro de Azkaban");
         filme.setAnoLancamento(2004);

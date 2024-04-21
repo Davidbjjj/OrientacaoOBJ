@@ -1,38 +1,15 @@
-public class Filme {
+public class Filme extends Titulo {
 
-    private String nome;
+ private String tipo="O Filme";
 
-    private  int anoLancamento;
+ public void setTipoFilme(String tipo){
 
+     this.tipo=tipo;
 
-    Filme(String Nome, int AnoLancamento){
+ }
 
-        this.nome= Nome;
-        this.anoLancamento=AnoLancamento;
-
+    public String getTipoFilme(){
+        return tipo;
     }
-
-
-  private String getnome(){
-
-        return nome;
-
-    }
-
-
-    public  String setnome(){
-
-       return nome;
-
-    }
-
-
-    void DescricaoFilme(){
-
-        System.out.println("O filme "+nome+" foi lançado no ano de "+anoLancamento);
-
-    }
-
 
 }
-

@@ -1,13 +1,19 @@
 public class Main {
     public static void main(String[] args) {
 
+        Serie serie=new Serie();
+        serie.setTipo("A Serie ");
+        Filme filme= new Filme();
+        filme.setTipo("O Filme ");
 
-        System.out.println("Hello world!");
+        filme.setNome("Harry Potter e o Prisioneiro de Azkaban");
+        filme.setAnoLancamento(2004);
+        filme.Descricao();
 
-        Filme filme = new Filme("Davin",2004);
+        serie.setNome("Dois Homens e Meio");
+        serie.setAnoLancamento(2006);
+        serie.Descricao();
 
 
-
-       filme.DescricaoFilme();
     }
 }

@@ -1,9 +1,20 @@
+package Modelos;
+
 public class Titulo {
 
     private String nome;
 
     private  int anoLancamento;
 
+    private int duracaoMininutos;
+
+    public int getDuracaoMininutos() {
+        return duracaoMininutos;
+    }
+
+    public void setDuracaoMininutos(int duracaoMininutos) {
+        this.duracaoMininutos = duracaoMininutos;
+    }
 
     public String getNome(){
 
@@ -50,5 +61,6 @@ public class Titulo {
         System.out.println(getTipo()+getNome()+", foi lançado no ano de "+getAnoLancamento());
 
     }
+
 
 }

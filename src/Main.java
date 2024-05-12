@@ -2,6 +2,8 @@ import Modelos.Filme;
 import Modelos.Serie;
 import Contador.Contar;
 
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -9,7 +11,8 @@ public class Main {
         serie.setTipo("A Serie ");
         Filme filme= new Filme();
         filme.setTipo("O Filme ");
-
+        Filme filme2= new Filme();
+        filme2.setTipo("O Filme ");
 
 
         filme.setNome("Harry Potter e o Prisioneiro de Azkaban");
@@ -17,6 +20,7 @@ public class Main {
         filme.setDuracaoMininutos(150);
         filme.Descricao();
         System.out.println("Duração do filme: " + filme.getDuracaoMininutos());
+
 
         serie.setNome("Dois Homens e Meio");
         serie.setAnoLancamento(2006);
@@ -28,10 +32,24 @@ public class Main {
         System.out.println();
 
 
+        filme2.setNome("Meninas malvadas");
+        filme2.setAnoLancamento(2004);
+        filme2.setDuracaoMininutos(90);
+        filme2.Descricao();
+        System.out.println("Duração do filme: " + filme2.getDuracaoMininutos());
+
+
         Contar contar=new Contar();
         contar.maratonar(serie);
         contar.maratonar(filme);
         System.out.println("tempo total em minutos para maratonar é de: "+contar.getTempo());
 
+
+        ArrayList<Filme>listaDeFilmes=new ArrayList<>();
+        listaDeFilmes.add(filme);
+        listaDeFilmes.add(filme2);
+        System.out.println("Tamanho da lista: "+listaDeFilmes.size());
+        System.out.println("Primeiro filme: "+listaDeFilmes.get(0).getNome());
+        System.out.println(listaDeFilmes);
     }
 }

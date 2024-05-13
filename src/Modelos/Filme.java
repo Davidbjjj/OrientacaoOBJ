@@ -6,4 +6,12 @@ public class Filme extends Titulo {
     public String toString() {
         return "Filme:"+this.getNome()+"\n";
     }
+
+    public Filme(String nome){
+        
+        this.setNome(nome);
+    }
+    public Filme(){
+        
+    }
 }

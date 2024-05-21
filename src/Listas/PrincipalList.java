@@ -2,10 +2,10 @@ package Listas;
 
 import Modelos.Filme;
 import Modelos.Serie;
-import Contador.Contar;
 import Modelos.Titulo;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class PrincipalList {
     public static void main(String[] args) {
@@ -22,5 +22,7 @@ public class PrincipalList {
             System.out.println(item);
 
         }
+        Collections.sort(lista);
+        System.out.println("Lista Ordenada:"+lista);
     }
 }

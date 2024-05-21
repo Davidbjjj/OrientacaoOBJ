@@ -13,6 +13,11 @@ private int minutos;
 private int tempora;
 
 
+    @Override
+    public String toString() {
+        return "Serie:"+this.getNome()+"\n"+"Ano de Lançamento:"+this.getAnoLancamento()+"\n";
+    }
+
 
     public int getTemporas(){
         return tempora;

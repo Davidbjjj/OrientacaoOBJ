@@ -1,6 +1,6 @@
 package Modelos;
 
-public class Titulo {
+public class Titulo implements Comparable<Titulo> {
 
     private String nome;
 
@@ -69,4 +69,8 @@ public class Titulo {
     }
 
 
+    @Override
+    public int compareTo(Titulo titulo) {
+        return this.getNome().compareTo(titulo.getNome());
+    }
 }

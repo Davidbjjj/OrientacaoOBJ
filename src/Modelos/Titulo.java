@@ -8,6 +8,10 @@ public class Titulo {
 
     private int duracaoMininutos;
 
+    public Titulo(String nome, int anoLancamento){
+
+    }
+
     public int getDuracaoMininutos() {
         return duracaoMininutos;
     }
@@ -60,6 +64,11 @@ public class Titulo {
 
         System.out.println(getTipo()+getNome()+", foi lançado no ano de "+getAnoLancamento());
 
+    }
+
+    @Override
+    public int compareTo(Titulo titulo){
+        return this.getNome().compareTo(titulo.getNome());
     }
 
 

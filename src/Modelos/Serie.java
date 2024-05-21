@@ -1,12 +1,17 @@
 package Modelos;
 
 public class Serie extends Titulo {
+    public Serie(String nome, int ano){
+        super(nome,ano);
+
+    }
 
 private int epsodios;
 
 private int minutos;
 
 private int tempora;
+
 
 
     public int getTemporas(){

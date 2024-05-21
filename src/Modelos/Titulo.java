@@ -9,7 +9,8 @@ public class Titulo {
     private int duracaoMininutos;
 
     public Titulo(String nome, int anoLancamento){
-
+        this.nome = nome;
+        this.anoLancamento = anoLancamento;
     }
 
     public int getDuracaoMininutos() {

@@ -7,6 +7,6 @@ super(nome, anoLancamento);
 
     @Override
     public String toString() {
-        return "Filme:"+this.getNome()+"\n"+"Ano de Lançamento:"+this.getAnoLancamento();
+        return "Filme:"+this.getNome()+"\n"+"Ano de Lançamento:"+this.getAnoLancamento()+"\n";
     }
 }

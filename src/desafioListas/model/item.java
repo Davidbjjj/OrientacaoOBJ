@@ -17,7 +17,7 @@ public class item implements Comparable<item> {
     public double getValor() {
         return valor;
     }
-    
+    //sobre escrita da classe, sempre quando ela é chamada, ela vai responder do jeito abaixo
     @Override
     public String toString() {
         

@@ -1,12 +1,22 @@
 package Modelos;
 
 public class Serie extends Titulo {
+    public Serie(String nome, int ano){
+        super(nome,ano);
+
+    }
 
 private int epsodios;
 
 private int minutos;
 
 private int tempora;
+
+
+    @Override
+    public String toString() {
+        return "Serie:"+this.getNome()+"\n"+"Ano de Lançamento:"+this.getAnoLancamento()+"\n";
+    }
 
 
     public int getTemporas(){

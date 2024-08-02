@@ -19,19 +19,24 @@ public class main {
         Scanner sc = new Scanner(System.in);
         System.out.println("Qual filme você quer ver?");
         String filme=sc.nextLine();
-        String endereco="http://www.omdbapi.com/?t="+filme+"&apikey=29334a08";
+        String endereco="http://www.omdbapi.com/?t="+filme.replace(" ","+")+"&apikey=29334a08";
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create(endereco))
                 .build();
         HttpResponse<String> response = client
                 .send(request, HttpResponse.BodyHandlers.ofString());
         String json =response.body();
-        System.out.println(json);
         Gson gson= new GsonBuilder().setFieldNamingPolicy(FieldNamingPolicy.UPPER_CAMEL_CASE).create();
         TituloOMDB meuTituloOM = gson.fromJson(json, TituloOMDB.class);
-        Titulo meuTitulo = new Titulo(meuTituloOM);
-        System.out.println(meuTitulo);
 
+        try{
+            System.out.println("Titulo achado");
+            Titulo meuTitulo = new Titulo(meuTituloOM);
+            System.out.println(meuTitulo);
+        }catch (NumberFormatException e) {
+            System.out.println("Aconteceu um erro");
+            System.out.println(e.getMessage());
+        }
     }
 
 }

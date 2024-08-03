@@ -14,6 +14,13 @@ public class main {
             notasAluno[i]=sc.nextDouble();
             totalnotas=totalnotas+notasAluno[i];
         }
+        /* Mesma coisa só que com foreach, no caso ele vai percorrer o array
+        for (double nota:notasAluno) {
+        colocando o valor de cada indice do notaAluno na variavel nota,
+            totalnotas+=nota;
+            totalnotas vai receber o valor do indice do array.
+        }
+        **/
         System.out.println("A média das notas dos Aluno é "+totalnotas/notasAluno.length);
 
     }

@@ -6,7 +6,7 @@ import DesafioHeranca.Model.Ferrari;
 
 public class main {
     public static void main(String[] args) {
-        Carro carro=new Carro();
+        Carro carro=new Carro(50);
         System.out.println(carro.velociadadeatual());
         carro.acelerar();
         carro.acelerar();

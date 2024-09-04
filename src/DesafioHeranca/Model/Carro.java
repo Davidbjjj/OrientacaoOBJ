@@ -2,6 +2,12 @@ package DesafioHeranca.Model;
 
 public class Carro {
     int velociade=0;
+    final int VELOCIDADEMAXIMA; 
+    
+    public Carro(int velocidademaxima){
+        VELOCIDADEMAXIMA= velocidademaxima;
+        
+    }
 
     public int velociadadeatual(){
         return velociade;
